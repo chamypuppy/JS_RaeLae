@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>래래</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
       <header>
         <nav>
           <ul>
+            <li>전체 곡</li>
             <li>앨범</li>
             <li>PICK</li>
             <li>즐겨찾기</li>
@@ -19,71 +22,34 @@
 
       <article>
         <section class="sec1">
-          <input type="text" />
-          <button>검색</button>
+          <form action="" method="GET">
+            <input type="text" id="search"
+            placeholder="곡 제목이나 가수명을 입력하세요!"/>
+            <input type="submit" value="&#xf002🔍" />
+          </form>
         </section>
         <section class="sec2_main">
           <ul>
-            <h3>오늘의 노래 추천</h3>
-            <!-- <button onclick="getToday()">추천</button> -->
-            <button>추천</button>
-            <li class="mu_list">
-              <h4 class="title"></h4>
-              <span class="artist"></span>
-              <span class="album"></span>
-              <div>
-                <span>TJ</span>
-                <span class="tj_num">TJ</span>
-                </div>
-              <div>
-                <span>KY</span>
-                <span class="ky_num">-</span>
-                </div>
-            </li>
+            <h3>최신 곡 추천</h3>
           </ul>
-          
-          <!-- <script>
-            function getToday() {
-              fetch('./today.json')
-                .then(response => response.json())
-                .then(data => {
-                  console.log(data); // 문자열로 변환된 JSON 데이터 출력
-                  const result = document.querySelector(".result");
-                  const quote = document.querySelector(".quote");
-                  quote.innerHTML = data.today[0].title;
-                })
-                .catch(error => {
-                  console.log('Error:', error);
-                });
-            }
-          </script> -->
+
           <script>
-              fetch('./today.json')
-                .then(response => response.json())
-                .then(data => {
-                  console.log(data); // 문자열로 변환된 JSON 데이터 출력
-                  const mu_list = document.querySelector(".mu_list");
-                  const title = document.querySelector(".title");
-                  const artist = document.querySelector(".artist");
-                  const album = document.querySelector(".album");
-                  const tjNum = document.querySelector(".tj_num");
-                  const kyNum = document.querySelector(".ky_num");
-                  title.innerHTML = data.today[0].title;
-                  artist.innerHTML = data.today[0].artist;
-                  album.innerHTML = data.today[0].album;
-                  tjNum.innerHTML = data.today[0].brand_tj_num;
-                  kyNum.innerHTML = data.today[0].brand_ky_num;
-                })
-                .catch(error => {
-                  console.log('Error:', error);
-                });
+          const favIcon = document.querySelector(".favIcon");
+
+          function doClickFavIcon(){
+            
+          }
+            
+          favIcon.addEventListener("click", doClickFavIcon());
           </script>
-          
-                
+
+
         </section>
       </article>
 
       <footer>&copy</footer>
+
+      <script src="./js/today_mu_list.js"></script>
     </div>
 </body>
 </html>

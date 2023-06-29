@@ -1,6 +1,6 @@
 {"today" : [
   { 
-    "album": ["기동전사 건담", " 철혈의 오펀스"],
+    "album": "기동전사 건담 철혈의 오펀스",
     "title": "オルフェンズの涙(오펀스의 눈물)",
     "artist": "MISIA",
     "brand_tj_num": 27973,
@@ -29,7 +29,7 @@
   },
   {
     "album": "최애의 아이",
-    "title": ["アイドル", "아이도루"],
+    "title": "アイドル(아이도루)",
     "artist": ["YOASOBI", "요야소비"],
     "brand_tj_num": 68781,
     "brand_ky_num": 44923 

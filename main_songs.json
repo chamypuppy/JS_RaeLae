@@ -1,7 +1,6 @@
-{"album" : [
+{"today" : [
   { 
-    "album": "기동전사 건담 철혈의 오펀스",
-    "cover": "./img/iron_blood.jpg",
+    "album": ["기동전사 건담", " 철혈의 오펀스"],
     "title": "オルフェンズの涙(오펀스의 눈물)",
     "artist": "MISIA",
     "brand_tj_num": 27973,
@@ -9,7 +8,6 @@
   },
   {
     "album": "기동전사 건담 철혈의 오펀스",
-    "cover": "./img/iron_blood.jpg",
     "title": "Raise your flag",
     "artist": "MAN WITH A MISSION",
     "brand_tj_num": 27853,
@@ -17,7 +15,6 @@
   },
   {
     "album": "기동전사 건담 철혈의 오펀스",
-    "cover": "./img/iron_blood.jpg",
     "title": "Survivor",
     "artist": "BLUE ENCOUNT",
     "brand_tj_num": 27844,
@@ -25,7 +22,6 @@
   },
   {
     "album": "기동전사 건담 철혈의 오펀스",
-    "cover": "./img/iron_blood.jpg",
     "title": "RAGE OF DUST",
     "artist": "SPYAIR",
     "brand_tj_num": 27969,
@@ -33,7 +29,6 @@
   },
   {
     "album": "최애의 아이",
-    "cover": "./img/oshi-no-ko_idol.png",
     "title": ["アイドル", "아이도루"],
     "artist": ["YOASOBI", "요야소비"],
     "brand_tj_num": 68781,
