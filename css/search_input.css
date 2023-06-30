@@ -1,11 +1,11 @@
-.sec1 form {
-}
+.sec1 form {}
 
 .sec1 form > #search {
-  height: 60px;
+  height: 60px; margin-bottom: 15px; width: 90%;
 }
 .sec1 form > input[type="submit"] {
   background-color: transparent; border: none;
+  width: 10%;
   /* background-image: url("https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-256.png"); */
   /* background-size: 50%; */
   /* background-repeat: no-repeat; */

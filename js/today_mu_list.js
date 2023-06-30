@@ -1,4 +1,4 @@
-fetch('./today.json')
+fetch('https://raw.githubusercontent.com/chamypuppy/JS_RaeLae/main/today.json')
     .then(response => response.json())
     .then(data => {
       // console.log(data); // 문자열로 변환된 JSON 데이터 출력
@@ -60,9 +60,9 @@ fetch('./today.json')
 
   // tj나 ky 중에 값이 없어 null일 경우
   if (tjNum.innerHTML == "null") {
-    tjNum.innerHTML = "-";
+    tjNum.innerHTML = "&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;";
   } else if (kyNum.innerHTML == "null") {
-    kyNum.innerHTML = "-";
+    kyNum.innerHTML = "&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;";
   }
 
   // TJ, KY 글자 넣기
