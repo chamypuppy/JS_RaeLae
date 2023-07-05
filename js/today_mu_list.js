@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', (event) => {
 
-fetch('https://raw.githubusercontent.com/chamypuppy/JS_RaeLae/main/today.json')
+fetch('https://raw.githubusercontent.com/chamypuppy/JS_RaeLae/main/json/all_mu_list.json')
     .then(response => response.json())
     .then(data => {
       // console.log(data); // 문자열로 변환된 JSON 데이터 출력
