@@ -5,9 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>래래</title>
   <link rel="stylesheet" href="./css/style.css">
-
   <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
-  <script src="./js/today_mu_list.js" ></script>
   <style>
     header { width: 100%; height: auto;}
     header > nav > ul {/* display: flex; */ text-align: center; list-style: none;}
@@ -58,8 +56,6 @@
     header > nav .hide {display: none;}
 
     /* #active {display: block;} */
-    .none { display: none !important; 
-      /* visibility: hidden; */}
 
   </style>
 </head>
@@ -74,9 +70,11 @@
               <span></span>
             </div>
 
-            <div class="logo_box">
-              <a href="home.html"><img src="" alt="" /></a>
-            </div>
+            <a href="home.html"> <!-- 임시 a태그 -->
+              <div class="logo_box">
+                <img src="" alt="" />
+              </div>
+              </a>
             
             <div class="login_bar_box">
               <ul class="login_icon">
@@ -105,39 +103,26 @@
 
       <article>
         <section class="sec1">
-          <form action="search.html" method="GET" id="form">
-            <input type="search" id="search"
+          <form action="#" method="GET" id="form">
+            <input type="text" id="search"
             placeholder="곡 제목이나 가수명을 입력하세요!"/>
-            <input type="button" id="search_btn" value="🔍︎" />
+            <input type="submit" id="search_btn" value="🔍︎" />
           </form>
         </section>
         <section class="sec2_main">
           <ul>
             <h3>최신 곡 추천</h3>
           </ul>
-<!-- 
-          <script>
-          const favIcon = document.querySelector(".favIcon");
-
-          function doClickFavIcon(){
-            
-          }
-            
-          favIcon.addEventListener("click", doClickFavIcon());
-          </script> -->
-
 
         </section>
       </article>
 
       <footer>&copy</footer>
 
-      
-
-
-      
+      <!-- <script src="./js/today_mu_list.js"></script> -->
       <script src="./js/nav_bar.js"></script>
-      <script src="./js/search_input_list.js" defer></script>
+
+
     </div>
 </body>
 </html>

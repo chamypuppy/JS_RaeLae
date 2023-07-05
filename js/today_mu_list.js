@@ -1,3 +1,5 @@
+window.addEventListener('DOMContentLoaded', (event) => {
+
 fetch('https://raw.githubusercontent.com/chamypuppy/JS_RaeLae/main/today.json')
     .then(response => response.json())
     .then(data => {
@@ -103,7 +105,7 @@ fetch('https://raw.githubusercontent.com/chamypuppy/JS_RaeLae/main/today.json')
   ul.appendChild(mu_list);
 
   // 확인
-  console.log(ul.appendChild(mu_list));
+  // console.log(ul.appendChild(mu_list));
 
 
   }
@@ -111,3 +113,4 @@ fetch('https://raw.githubusercontent.com/chamypuppy/JS_RaeLae/main/today.json')
     .catch(error => {
       console.log('Error:', error);
     });
+  });
