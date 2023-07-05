@@ -3,10 +3,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
 fetch('https://raw.githubusercontent.com/chamypuppy/JS_RaeLae/main/json/all_mu_list.json')
     .then(response => response.json())
     .then(data => {
-      // console.log(data); // 문자열로 변환된 JSON 데이터 출력
-      // console.log("today".length);
-      const todayCount = "today".length;
-      const todayRandom = Math.floor(Math.random() * todayCount)
+      console.log(data.today.length); // 문자열로 변환된 JSON 데이터 출력
+      console.log(data.today.length);
+      const JSON_Data = data.today;
+      const todayCount = JSON_Data.length;
+      // const todayRandom = Math.floor(Math.random() * todayCount)
       // console.log(todayRandom);
       
 
